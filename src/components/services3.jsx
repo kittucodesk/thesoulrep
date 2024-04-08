@@ -40,17 +40,9 @@ export const Services3 = (props) => {
  foster direct business growth. </p>
           </div>
           
-          {/* <div style={{ width: '40%' }} className="text-center">
-            <img style={{ width: '60%', height: '60%' }} src="../img/highres-03.png" alt="Globe" />
-          </div> */}
+          
         </div>
-        {/* <div  >
-          <img style={{ width: '100%', height: '100%' }} src="../img/globe.png" alt="Globe" />
-        </div> */}
-
-        {/* <div style={{width:'40%'}} >
-          <img style={{ width: '100%', height: '100%' }} src="../img/globe.png" alt="Globe" />
-        </div> */}
+        
       
     </div>
   );
