@@ -15,14 +15,14 @@ export const Contact = (props) => {
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
   const clearState = () => setState({ ...initialState });
-  
-  
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(name, email, message);
-    
+
     {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
-    
+
     emailjs
       .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
       .then(
@@ -44,9 +44,7 @@ export const Contact = (props) => {
               <div className="section-title">
                 <h2>Get In Touch</h2>
                 <p>
-                Get ready to enhance your brand's presence in luxury travel. From bespoke representation and expert advice to any additional information, we are here to assist. Let's bring your travel dreams to life with The Soul Rep.
-
-
+                  Get ready to enhance your brand's presence in luxury travel. From bespoke representation and expert advice to any additional information, we are here to assist. Let's bring your travel dreams to life with The Soul Rep.
                 </p>
               </div>
               <form name="sentMessage" validate onSubmit={handleSubmit}>
@@ -93,7 +91,7 @@ export const Contact = (props) => {
                   <p className="help-block text-danger"></p>
                 </div>
                 <div id="success"></div>
-                <button type="submit" className="btn btn-custom btn-lg" style={{backgroundColor: " #6a684c"}}>
+                <button type="submit" className="btn btn-custom btn-lg" style={{ backgroundColor: " #6a684c" }}>
                   Send Message
                 </button>
               </form>
@@ -102,24 +100,24 @@ export const Contact = (props) => {
           <div className="col-md-3 col-md-offset-1 contact-info">
             <div className="contact-item">
               <h3>Contact Info</h3>
-              <p style={{color: "#6a684c"}}>
-                <span style={{color: "#6a684c"}} >
+              <p style={{ color: "#6a684c" }}>
+                <span style={{ color: "#6a684c" }} >
                   <i className="fa fa-map-marker"></i> Address
                 </span>
                 {props.data ? props.data.address : "loading"}
               </p>
             </div>
             <div className="contact-item">
-              <p style={{color: "#6a684c"}}>
-                <span style={{color: "#6a684c"}}>
+              <p style={{ color: "#6a684c" }}>
+                <span style={{ color: "#6a684c" }}>
                   <i className="fa fa-phone"></i> Phone
                 </span>{" "}
                 {props.data ? props.data.phone : "loading"}
               </p>
             </div>
             <div className="contact-item">
-              <p style={{color: "#6a684c"}}>
-                <span style={{color: "#6a684c"}}>
+              <p style={{ color: "#6a684c" }}>
+                <span style={{ color: "#6a684c" }}>
                   <i className="fa fa-envelope-o"></i> Email
                 </span>{" "}
                 {props.data ? props.data.email : "loading"}
@@ -153,7 +151,7 @@ export const Contact = (props) => {
       </div>
       <div id="footer">
         <div className="container text-center">
-         
+
         </div>
       </div>
     </div>

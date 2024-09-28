@@ -17,3 +17,9 @@
     width: 110%;
   }
 }
+ body {
+  p {
+    padding: 0;
+    margin: 0;
+  }
+ }
